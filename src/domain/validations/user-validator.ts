@@ -7,7 +7,7 @@ export default class ValidatorUser {
     try {
       new NameValidator().valid(name);
       new EmailValidator().valid(email);
-    //   new PasswordValidator().valid(password);
+      new PasswordValidator().valid(password);
     } catch (error: any) {
       return error.message;
     }
